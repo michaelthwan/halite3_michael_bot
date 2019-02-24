@@ -6,6 +6,8 @@ It is developed in 1.5 weeks only and the highest rank is 18 (during first a few
 
 Although it didn't win, it only have ~700 lines of codes, which consist of main components like destination selection, collision/move strategies, dropoff/spawn strategies, etc.
 
+Halite Profile: https://halite.io/user/?user_id=373
+
 ## Pesudo code of main logic
 
 ```
@@ -15,7 +17,11 @@ for each turn:
     
     prioritized_ships = ShipSelection.sort(ships)
     for each prioritized_ships:
-        move = ship.get_move_by_status(status, DestinationSelectionModule(value_map, stats), MiningStrategy, DropoffStrategy)
+        move = ship.get_move_by_status(
+            status, 
+            DestinationSelectionModule(value_map, stats), 
+            MiningStrategy, DropoffStrategy
+        )
         MoveModule.execute_move(move)
     ShipSpawningModule.build_ship()
 ```
