@@ -1,6 +1,6 @@
-# halite3_michaelwan_bot
+# halite3_michael_bot
 ## Overview
-My (Michael Wan) attempt on halite 3 competition. 
+My attempt on halite 3 competition. 
 
 It is developed in 1.5 weeks only and the highest rank is 18 (during first a few weeks), then abandoned and dropped to #183 finally. 
 
